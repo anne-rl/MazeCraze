@@ -48,6 +48,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -59,15 +61,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11172}
+      Script: {instanceID: 11170}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 12174}
+      Script: {instanceID: 12172}
     - Class: 114
-      Script: {instanceID: 12806}
+      Script: {instanceID: 12804}
     - Class: 114
-      Script: {instanceID: 12876}
+      Script: {instanceID: 12874}
+    - Class: 114
+      Script: {instanceID: 13464}
     - Class: 114
       Script: {instanceID: 13632}
     - Class: 114
@@ -76,8 +80,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14178}
     - Class: 114
       Script: {instanceID: 14246}
-    - Class: 114
-      Script: {instanceID: 28286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -457,6 +459,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 930b2a7c015542327cee6af349728cdd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
+  - hash:
+      serializedVersion: 2
       Hash: 8001a5f7502aab37e42206da015e6914
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -599,12 +607,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 930b2a7c015542327cee6af349728cdd
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PauseMenu
   platform: 13
   scenePathNames:
   - Assets/Scenes/Level1.unity
