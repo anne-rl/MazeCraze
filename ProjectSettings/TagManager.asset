@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FastFood
+  - Fruits
   layers:
   - Default
   - TransparentFX
@@ -40,4 +42,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 2560905309
+    locked: 0
+  - name: Fruit
+    uniqueID: 1846324745
+    locked: 0
+  - name: FastFood
+    uniqueID: 756833079
+    locked: 0
+  - name: Canvas
+    uniqueID: 2886113669
+    locked: 0
+  - name: Player
+    uniqueID: 4174211855
     locked: 0

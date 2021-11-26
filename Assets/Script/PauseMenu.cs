@@ -18,4 +18,6 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f; //timeScale equal to 1 to resume the game
     }
+
+
 }
