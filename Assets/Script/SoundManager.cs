@@ -64,7 +64,7 @@ public class SoundManager : MonoBehaviour
         muted = PlayerPrefs.GetInt("muted") == 1; //if muted is 1, muted is set to true and vice versa
     }
 
-    private void Save() //convert bool to int
+    private void Save() //set data & convert bool to int
     {
         PlayerPrefs.SetInt("muted", muted ? 1 : 0); //if muted is true, save it as 1, else save it as 0 
     }
