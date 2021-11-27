@@ -16,7 +16,7 @@ public class MovementJoystick : MonoBehaviour
     void Start()
     {
         joystickOriginalPos = joystickBG.transform.position;
-        joystickRadius = joystickBG.GetComponent<RectTransform>().sizeDelta.y / 2;
+        joystickRadius = joystickBG.GetComponent<RectTransform>().sizeDelta.y / 4;
     }
 
     public void PointerDown()
@@ -26,7 +26,7 @@ public class MovementJoystick : MonoBehaviour
         joystickTouchPos = Input.mousePosition;
 
     }
-    //Drag function used when player drugs the screen
+    //Drag function used when player drags the screen
     //Pointereventdata used to get the drag position
     public void Drag(BaseEventData baseEventData)
     {
@@ -36,6 +36,7 @@ public class MovementJoystick : MonoBehaviour
 
         float joystickDist = Vector2.Distance(dragPos, joystickTouchPos);
 
+        //condition so the joytick moves only around the joystick background
         if (joystickDist < joystickRadius)
         {
             joystick.transform.position = joystickTouchPos + joystickVec * joystickDist;

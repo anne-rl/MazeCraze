@@ -9,9 +9,10 @@ public class PlayerScore : MonoBehaviour
 
     private Text scoreText;
     private int score = 0;
-    public GameObject PanelGameover;
-    public GameObject PanelYouWin;
-
+    //public GameObject PanelGameover;
+    //public GameObject PanelYouWin;
+    [SerializeField] GameObject MenuGameover;
+    [SerializeField] GameObject MenuWinning;
 
 
 
@@ -47,7 +48,7 @@ public class PlayerScore : MonoBehaviour
             if (scoreText.text == "30")
             {
                 // StartCoroutine(RestartGame());
-                PanelYouWin.SetActive(true);
+                MenuWinning.SetActive(true);
 
             }
         }
@@ -60,7 +61,7 @@ public class PlayerScore : MonoBehaviour
 
     IEnumerator RestartGame()
     {
-        PanelGameover.SetActive(true);
+        MenuGameover.SetActive(true);
         yield return new WaitForSecondsRealtime (2f);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
